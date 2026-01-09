@@ -13,11 +13,12 @@
             <uses-feature android:name="android.hardware.camera.any" android:required="false" />
             <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
             <uses-feature android:name="android.hardware.camera.front" android:required="false" />
-            
+            <uses-feature android:name="android.hardware.telephony" android:required="false" />
             <uses-feature android:name="android.hardware.location.gps" android:required="false" />
             <uses-feature android:name="android.hardware.location" android:required="false" />
-            
+            <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
             <uses-feature android:name="android.hardware.fingerprint" android:required="false" />
+            <uses-feature android:name="android.hardware.microphone" android:required="false" />
         </config-file>
     </platform>
 </plugin>
