@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="cordova-chromebook-skip"
+        version="1.0.0">
+    <name>Cordova Chromebook Skip</name>
+    <description>Force hardware features to be optional for Chromebook support</description>
+    <license>MIT</license>
+    <keywords>cordova, android, chromebook</keywords>
+
+    <platform name="android">
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-feature android:name="android.hardware.camera" android:required="false" />
+            <uses-feature android:name="android.hardware.camera.any" android:required="false" />
+            <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+            <uses-feature android:name="android.hardware.camera.front" android:required="false" />
+            
+            <uses-feature android:name="android.hardware.location.gps" android:required="false" />
+            <uses-feature android:name="android.hardware.location" android:required="false" />
+            
+            <uses-feature android:name="android.hardware.fingerprint" android:required="false" />
+        </config-file>
+    </platform>
+</plugin>
