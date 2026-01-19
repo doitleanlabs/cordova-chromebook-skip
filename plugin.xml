@@ -15,6 +15,14 @@
             <preference name="GradlePluginKotlinEnabled" value="true" />
         </config-file>
         <config-file target="AndroidManifest.xml" parent="/*">
+            <queries>
+                <intent>
+                    <action android:name="android.intent.action.VIEW" />
+                    <category android:name="android.intent.category.BROWSABLE" />
+                    <data android:scheme="https" />
+                </intent>
+                <package android:name="com.android.chrome" />
+            </queries>
             <uses-feature android:name="android.hardware.camera" android:required="false" />
             <uses-feature android:name="android.hardware.camera.any" android:required="false" />
             <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
