@@ -11,6 +11,8 @@
         <proguard-config file="proguard-rules.pro" />
         <config-file target="res/xml/config.xml" parent="/*">
             <preference name="AndroidProguardFiles" value="proguard-rules.pro" />
+            <preference name="AndroidXEnabled" value="true" />
+            <preference name="GradlePluginKotlinEnabled" value="true" />
         </config-file>
         <config-file target="AndroidManifest.xml" parent="/*">
             <uses-feature android:name="android.hardware.camera" android:required="false" />
