@@ -8,6 +8,10 @@
     <keywords>cordova, android, chromebook</keywords>
 
     <platform name="android">
+        <proguard-config file="proguard-rules.pro" />
+        <config-file target="res/xml/config.xml" parent="/*">
+            <preference name="AndroidProguardFiles" value="proguard-rules.pro" />
+        </config-file>
         <config-file target="AndroidManifest.xml" parent="/*">
             <uses-feature android:name="android.hardware.camera" android:required="false" />
             <uses-feature android:name="android.hardware.camera.any" android:required="false" />
