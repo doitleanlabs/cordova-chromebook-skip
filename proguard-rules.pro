@@ -1,4 +1,4 @@
 -keep class com.outsystems.plugins.inappbrowser.** { *; }
+-keep class com.outsystems.plugins.inappbrowser.osinappbrowserlib.** { *; }
 -keep class kotlin.** { *; }
--keepattributes Signature, *Annotation*, EnclosingMethod
--keep public class * extends org.apache.cordova.CordovaPlugin
+-dontwarn com.outsystems.plugins.inappbrowser.**
